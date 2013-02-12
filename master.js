@@ -13,6 +13,7 @@ function call_youtube(){
 		var vHtml = "";
 		vhtml = "<iframe id=\"ytplayer\" type=\"text/html\" width=\"420\" height=\"315\" src=\"http://www.youtube.com/embed/{0}?autoplay=1\" frameborder=\"0\"/>";
 		$('#video').append(vhtml.replace("{0}",videos[randomnumber]));
+		$('#video').show();
 		$('#button').hide();
 		$('#timer').show();
 		timer();
