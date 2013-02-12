@@ -1,5 +1,5 @@
 function load(){
-	var videos = call_youtube();
+	//var videos = call_youtube();
 	timer();
 }
 
@@ -16,7 +16,8 @@ function call_youtube(){
 		//console.log(randomnumber);
 		var vHtml = "";
 		vhtml = "<iframe id=\"ytplayer\" type=\"text/html\" width=\"420\" height=\"315\" src=\"http://www.youtube.com/embed/{0}?autoplay=1\" frameborder=\"0\"/>";
-		$('#temp').append(vhtml.replace("{0}",videos[randomnumber]));
+		$('#video').append(vhtml.replace("{0}",videos[randomnumber]));
+		$('#button').hide();
 	});
 }
 
@@ -34,5 +35,5 @@ function timer()
      return;
   }
 
-  $('.timer').html(count.toString());
+  $('#timer').html(count.toString());
 }
