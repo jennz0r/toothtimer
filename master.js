@@ -2,7 +2,7 @@
 function call_youtube(){
 	var url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q=cute+funny&type=video&videoDuration=short&key=AIzaSyAzbxEzpDORl5gUwugGG8z8IGcxRULSEMQ";
 	var videos = new Array();
-	$.get(url, function(data) {
+	$.getJSON(url, function(data) {
 		for(i=0;i<data.items.length;i++)
 		{
 			videos.push(data.items[i].id.videoId);
