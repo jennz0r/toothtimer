@@ -1,7 +1,3 @@
-function load(){
-	//var videos = call_youtube();
-	timer();
-}
 
 function call_youtube(){
 	var url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q=cute+funny&type=video&videoDuration=short&key=AIzaSyAzbxEzpDORl5gUwugGG8z8IGcxRULSEMQ";
@@ -18,6 +14,9 @@ function call_youtube(){
 		vhtml = "<iframe id=\"ytplayer\" type=\"text/html\" width=\"420\" height=\"315\" src=\"http://www.youtube.com/embed/{0}?autoplay=1\" frameborder=\"0\"/>";
 		$('#video').append(vhtml.replace("{0}",videos[randomnumber]));
 		$('#button').hide();
+		$('#timer').show();
+		timer();
+		
 	});
 }
 
