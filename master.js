@@ -30,4 +30,3 @@ function timer() {
  	}
 	$('#timer').html(count.toString());
 }
-
