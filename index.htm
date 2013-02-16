@@ -1,73 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style type="text/css" media="screen">
-
-		html, body, div, span, applet, object, iframe,
-		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-		a, abbr, acronym, address, big, cite, code,
-		del, dfn, em, img, ins, kbd, q, s, samp,
-		small, strike, strong, sub, sup, tt, var,
-		b, u, i, center,
-		dl, dt, dd, ol, ul, li,
-		fieldset, form, label, legend,
-		table, caption, tbody, tfoot, thead, tr, th, td,
-		article, aside, canvas, details, embed, 
-		figure, figcaption, footer, header, hgroup, 
-		menu, nav, output, ruby, section, summary,
-		time, mark, audio, video {
-			margin: 0;
-			padding: 0;
-			border: 0;
-			font-size: 100%;
-			font: inherit;
-			vertical-align: baseline;
-		}
-
-			a:link {color:black;} 
-			a:visited {color:black;}
-			a:hover {color:black;}
-			a:active {color:black;}
-
-			a:link {text-decoration:none;}
-			a:visited {text-decoration:none;}
-			a:hover {text-decoration:none;}
-			a:active {text-decoration:none;}
-
-			#wrapper {
-				width: 1000px;
-				margin-right: auto;
-				margin-left: auto;
-			}
-
-			#title {
-				font-family: 'helvetica', sans-serif;
-				font-size: 60px;
-				padding: 60px;
-				text-align: center;
-			}
-
-			#button {
-				width: 200px;
-				margin: 20px auto;
-				padding: 20px;
-				border-radius: 10px;
-				text-align: center;
-				background-color: #5ac3b6;
-				font-family: 'helvetica', sans-serif;
-				font-size: 30px;
-			}
-
-			#video {
-				width: 420px;
-				margin: 20px auto;
-				padding: 20px;
-				border-radius: 10px;
-				background-color: #5ac3b6;
-			}
-
-		</style>
-
+		<link type="text/css" rel="stylesheet" href="style.css" media="screen" />
 	</head>
 	<body>
 		<div id="wrapper">
@@ -77,12 +11,13 @@
 			<div id="button">
 				<a href="#" onclick="call_youtube()">START</a>
 			</div>
-			<div id="video" style="display:none;"></div>
-			<div id="timer" style="display:none;">120</div>
+			<div id="video" style="display: none;"></div>
+			<div id="timer" style="display: none;">120</div>
 		</div>
 	</body>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="https://apis.google.com/js/client.js?onload=load"></script>
 <script type="text/javascript" src="master.js"></script>
+
 </html>
