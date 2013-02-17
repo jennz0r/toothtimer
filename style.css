@@ -45,8 +45,8 @@
 
 			#button {
 				width: 200px;
-				margin: 20px auto;
-				padding: 20px;
+				margin: 50px auto 20px auto;
+				padding: 20px 5px;
 				border-radius: 10px;
 				text-align: center;
 				background-color: #5ac3b6;
@@ -54,6 +54,7 @@
 				font-size: 30px;
 				color: #1C1C1C;
 				box-shadow: 2px 2px 3px #888;
+				cursor: pointer;
 			}
 
 			#video {
@@ -74,3 +75,19 @@
 				padding: 20px;
 				text-align: center;
 			}
+
+			#cheer {
+				font-family: 'helvetica', sans-serif;
+				font-size: 40px;
+				color: #1C1C1C;
+				padding: 20px;
+				text-align: center;
+			}
+
+
+		.back {
+			position: absolute;
+			left: 350px;
+			top: -50px;
+			z-index: -1;
+		}
