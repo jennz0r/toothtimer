@@ -20,7 +20,7 @@ function call_youtube(){
 		var vHtml = "";
 		vhtml = "<iframe id=\"ytplayer\" type=\"text/html\" width=\"420\" height=\"315\" src=\"http://www.youtube.com/embed/{0}?autoplay=1\" frameborder=\"0\"/>";
 		$(videoid).append(vhtml.replace("{0}",videos[randomnumber]));
-		$(videoid).fadeIn(100);
+		$(videoid).fadeIn(90);
 		$(buttonid).hide();
 		$(timerid).show();
 		counter = setInterval(timer, 1000); //1000 will run it every 1 second
