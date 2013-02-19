@@ -1,5 +1,7 @@
 $(document).ready(function() {
-$('#button').on('click', call_youtube);
+
+var buttonid = $('#button');
+$(buttonid).on('click', call_youtube);
 
 var count = 120;
 var counter = null;
@@ -9,7 +11,6 @@ function call_youtube(){
 	var url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q=cute+funny&type=video&videoDuration=short&key=AIzaSyAzbxEzpDORl5gUwugGG8z8IGcxRULSEMQ";
 	var videos = [];
 	var videoid = $('#video');
-	var buttonid = $('#button');
 	$.getJSON(url, function(data) {
 		for(i = 0; i < data.items.length; i++) {
 			videos.push(data.items[i].id.videoId);
@@ -24,6 +25,7 @@ function call_youtube(){
 		$(timerid).show();
 		counter = setInterval(timer, 1000); //1000 will run it every 1 second
 	});
+	$(buttonid).unbind('click', call_youtube);
 }
 	
 	function timer() {
