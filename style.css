@@ -33,13 +33,18 @@
 				width: 1000px;
 				margin-right: auto;
 				margin-left: auto;
+				background: url('tooth.png') no-repeat center -10px;
+				height: 600px;
+				/*background-repeat: no-repeat;
+				background-position: center;
+				background-height: 600px;*/
 			}
 
 			#title {
 				font-family: 'helvetica', sans-serif;
 				font-size: 60px;
 				color: #1C1C1C;
-				padding: 60px 0 20px 0;
+				padding: 100px 0 20px 0;
 				text-align: center;
 			}
 
@@ -83,11 +88,3 @@
 				padding: 20px;
 				text-align: center;
 			}
-
-
-		.back {
-			position: absolute;
-			left: 350px;
-			top: -50px;
-			z-index: -1;
-		}
