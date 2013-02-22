@@ -29,18 +29,37 @@
 			a:hover {text-decoration:none;}
 			a:active {text-decoration:none;}
 
+		@media (max-width: 700px) {
+			#title {
+				font-size: 65px !important;
+			}
+			#button {
+				font-size: 45px !important;
+				max-width: 250px !important;
+			}
+		}
+
+		@media (max-width: 400px) {
+			#title {
+				font-size: 70px !important;
+			}
+			#button {
+				font-size: 60px !important;
+				max-width: 300px !important;
+			}
+		}
+
 			#wrapper {
-				width: 1000px;
+				max-width: 1000px;
+				width: 100%;
 				margin-right: auto;
 				margin-left: auto;
 				background: url('tooth.png') no-repeat center -10px;
 				height: 600px;
-				/*background-repeat: no-repeat;
-				background-position: center;
-				background-height: 600px;*/
 			}
 
 			#title {
+				width: 100%;
 				font-family: 'helvetica', sans-serif;
 				font-size: 60px;
 				color: #1C1C1C;
@@ -49,7 +68,8 @@
 			}
 
 			#button {
-				width: 200px;
+				max-width: 200px;
+				width: 100%;
 				margin: 50px auto 20px auto;
 				padding: 20px 5px;
 				border-radius: 10px;
@@ -63,7 +83,8 @@
 			}
 
 			#video {
-				width: 420px;
+				max-width: 420px;
+				width: 100%;
 				margin: 20px auto;
 				padding: 20px;
 				border-radius: 10px;
@@ -74,6 +95,7 @@
 			}
 
 			#timer {
+				width: 100%;
 				font-family: 'helvetica', sans-serif;
 				font-size: 50px;
 				color: #1C1C1C;
@@ -82,6 +104,7 @@
 			}
 
 			#cheer {
+				width: 100%;
 				font-family: 'helvetica', sans-serif;
 				font-size: 40px;
 				color: #1C1C1C;
