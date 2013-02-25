@@ -29,33 +29,15 @@
 			a:hover {text-decoration:none;}
 			a:active {text-decoration:none;}
 
-		@media screen and (max-width: 700px) {
-			#title {
-				font-size: 65px !important;
+			body {
+				background: url('tooth.png') no-repeat center -10px;
 			}
-			#button {
-				font-size: 45px !important;
-				max-width: 250px !important;
-			}
-		}
-
-		@media screen and (max-width: 400px) {
-			#title {
-				font-size: 70px !important;
-			}
-			#button {
-				font-size: 60px !important;
-				max-width: 300px !important;
-			}
-		}
 
 			#wrapper {
 				max-width: 1000px;
 				width: 100%;
 				margin-right: auto;
 				margin-left: auto;
-				background: url('tooth.png') no-repeat center -10px;
-				height: 600px;
 			}
 
 			#title {
@@ -111,3 +93,28 @@
 				padding: 20px;
 				text-align: center;
 			}
+
+
+		@media screen and (max-width: 700px) {
+			
+			#title {
+				font-size: 65px;
+			}
+
+			#button {
+				font-size: 45px;
+				max-width: 250px;
+			}
+		}
+
+		@media screen and (max-width: 400px) {
+			
+			#title {
+				font-size: 70px;
+			}
+			
+			#button {
+				font-size: 60px;
+				max-width: 300px;
+			}
+		}
