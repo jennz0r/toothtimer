@@ -81,7 +81,7 @@
 				font-family: 'helvetica', sans-serif;
 				font-size: 50px;
 				color: #1C1C1C;
-				padding: 20px;
+				padding: 10px;
 				text-align: center;
 			}
 
@@ -90,7 +90,7 @@
 				font-family: 'helvetica', sans-serif;
 				font-size: 40px;
 				color: #1C1C1C;
-				padding: 20px;
+				padding: 10px;
 				text-align: center;
 			}
 
@@ -110,11 +110,14 @@
 		@media screen and (max-width: 400px) {
 			
 			#title {
-				font-size: 70px;
+				font-size: 65px;
 			}
 			
 			#button {
-				font-size: 60px;
-				max-width: 300px;
+				font-size: 55px;
+				max-width: 275px;
+			}
+			#video {
+				margin-left: -30px;
 			}
 		}
