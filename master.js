@@ -12,13 +12,13 @@ function call_youtube(){
 	var videos = [];
 	var videoid = $('#video');
 	$.getJSON(url, function(data) {
-		for(i = 0; i < data.items.length; i++) {
+		for(var i = 0, len = data.items.length; i < len; i++) {
 			videos.push(data.items[i].id.videoId);
 			//$('#temp').append("video id: " + data.items[i].id.videoId + "<br/>");
 		}
-		var randomnumber = Math.floor(Math.random()*videos.length);
+		var randomnumber = Math.floor(Math.random() * videos.length);
 		var vHtml = "";
-		vhtml = "<iframe id=\"ytplayer\" type=\"text/html\" width=\"420\" height=\"315\" src=\"http://www.youtube.com/embed/{0}?autoplay=1\" frameborder=\"0\"/>";
+		vhtml = "<iframe id=\"ytplayer\" type=\"text/html\" src=\"http://www.youtube.com/embed/{0}?autoplay=1\" frameborder=\"0\"/>";
 		$(videoid).append(vhtml.replace("{0}",videos[randomnumber]));
 		$(videoid).fadeIn(100);
 		$(buttonid).hide();
