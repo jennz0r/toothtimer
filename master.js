@@ -3,7 +3,7 @@ $(document).ready(function() {
 var buttonid = $('#button');
 $(buttonid).on('click', call_youtube);
 
-var count = 1;
+var count = 120;
 var counter = null;
 var timerid = $('#timer');
 
