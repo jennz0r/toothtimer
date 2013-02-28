@@ -34,7 +34,7 @@ time, mark, audio, video {
 	}
 
 	#wrapper {
-		max-width: 1000px;
+		max-width: 900px;
 		width: 100%;
 		margin-right: auto;
 		margin-left: auto;
@@ -45,7 +45,8 @@ time, mark, audio, video {
 		font-family: 'helvetica', sans-serif;
 		font-size: 60px;
 		color: #1C1C1C;
-		padding: 100px 0 10px 0;
+		padding: 10px 0 10px 0;
+		margin-top: 90px;
 		text-align: center;
 	}
 
@@ -95,6 +96,7 @@ time, mark, audio, video {
 		font-family: 'helvetica', sans-serif;
 		font-size: 40px;
 		color: #1C1C1C;
+		margin-top: 40px;
 		padding: 10px;
 		text-align: center;
 	}
@@ -112,12 +114,20 @@ time, mark, audio, video {
 		height: 285px;
 		padding: 16px;
 	}
+
+	#cheer {
+		background-color: white;
+		margin-top: 50px;
+		padding: 5px;
+		font-size: 38px;
+	}
 }
 
 @media screen and (max-width: 400px) {
 	
 	#title {
 		font-size: 65px;
+		margin-top: 70px;
 	}
 	
 	#button {
@@ -129,9 +139,17 @@ time, mark, audio, video {
 		width: 360px;
 		height: 270px;
 		padding: 10px;
+		margin: 10px auto;
 	}
 
 	#timer {
 		font-size: 55px;
+	}
+
+	#cheer {
+		background-color: white;
+		margin-top: 20px;
+		padding: 5px;
+		font-size: 38px;
 	}
 }
